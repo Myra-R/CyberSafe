@@ -10,6 +10,12 @@ CREATE TABLE userscore (
     positives TEXT NOT NULL,
 )
 
+CREATE TABLE users (
+    id AUTO INTEGER PRIMARY KEY NOT NULL,
+    email VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL
+)
+
 /* Store positives/negatives as a JSON object to work with sequelize*/
 
 /* Scoring rubric: 

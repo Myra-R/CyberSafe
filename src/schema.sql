@@ -6,8 +6,8 @@ USE cyberSafeDB;
 CREATE TABLE userscore (
     id AUTO INTEGER PRIMARY KEY NOT NULL,
     score INT(10) NOT NULL,
-    negatives TEXT NOT NULL,
-    positives TEXT NOT NULL,
+    negatives json NOT NULL,
+    positives json NOT NULL
 )
 
 CREATE TABLE users (
@@ -16,16 +16,13 @@ CREATE TABLE users (
     password VARCHAR(30) NOT NULL
 )
 
-/* Store positives/negatives as a JSON object to work with sequelize*/
-
 /* Scoring rubric: 
     Password criteria:
         >12 characters +?
         <11 characters -?
-    Email criteria:
-
     Quiz criteria:
-
+        How many questions?
+        Points +/- per question?
     Out of 100? 
     Passing level? 
 */

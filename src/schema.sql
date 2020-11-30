@@ -8,6 +8,7 @@ CREATE TABLE userscore (
     score INT(10) NOT NULL,
     negatives TEXT NOT NULL,
     positives TEXT NOT NULL,
+    FOREIGN KEY (users_id) REFERENCES users(id)
 )
 
 CREATE TABLE users (

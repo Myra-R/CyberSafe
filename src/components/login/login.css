@@ -1,0 +1,8 @@
+form{
+    margin-top: 3em;
+    max-width: 80%;
+    text-align: center;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+

@@ -1,7 +1,8 @@
 {
   "name": "cybersafe",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -15,12 +16,13 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-jwt": "^5.3.1",
+    "if-env": "^1.0.4",
     "mysql": "^2.15.0",
-    "mysql2": "^1.5.3"
+    "mysql2": "^1.5.3",
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
-    "if-env": "^1.0.4",
     "nodemon": "^1.17.3"
   }
 }

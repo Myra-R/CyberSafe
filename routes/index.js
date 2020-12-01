@@ -1,6 +1,6 @@
 const path = require("path");
 const express = require("express");
-const router = express.Router()
+const router = express.outer()
 const apiRoutes = require("./api");
 
 // API Routes

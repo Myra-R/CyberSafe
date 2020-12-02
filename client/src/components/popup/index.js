@@ -1,3 +1,16 @@
-import Feedback from './Feedback';
+import Feedback from './feedback';
+import Popup from './popup'
 
-export default Feedback;
+// function Popup() {
+//     const style = {
+
+//     }
+
+//     return (
+//         <Feedback 
+//             style={style}
+//         />
+//     )
+// }
+
+export default Popup;

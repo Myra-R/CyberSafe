@@ -1,0 +1,8 @@
+.subject {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+}
+.results {
+    display: flex;
+}

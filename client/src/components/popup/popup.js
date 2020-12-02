@@ -1,6 +1,6 @@
 import React from 'react';
-import FeedBack from './components/popup/feedback';
-import './App.css';
+import FeedBack from './feedback';
+// import './App.css';
 
 function App() {
 	return (
@@ -19,8 +19,8 @@ function App() {
         </a>
 			</header>
 			<FeedBack
-				style={{zIndex:'1', position:'fixed', left:'2px!'}}
-				position="left"
+				style={{zIndex:'1', position:'fixed', right:'50%!'}}
+				position="right"
 				numberOfStars={5}
 				headerText="Hello"
 				bodyText="Custom Body test"

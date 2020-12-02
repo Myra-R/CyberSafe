@@ -8,30 +8,30 @@ function Profile() {
         <>
         {<Popup/>}
 
-        <form className="form">
+        <form id="profile">
             <h3>Profile Section</h3>
 
-            <div className="form-group">
+            <div id="form-firstName">
                 <label>First name</label>
                 <input type="text" className="form-control" placeholder="First name" />
             </div>
 
-            <div className="form-group">
+            <div id="form-lastName">
                 <label>Last name</label>
                 <input type="text" className="form-control" placeholder="Last name" />
             </div>
 
-            <div className="form-group">
+            <div id="form-company">
                 <label>What company are you applying with?</label>
                 <input type="email" className="form-control" placeholder="Company Name" />
             </div>
 
-            <div className="form-group">
+            <div id="form-city">
                 <label>What City were you born in?</label>
                 <input type="password" className="form-control" placeholder="Enter City" />
             </div>
 
-            <div className="form-group">
+            <div id="form-question">
                 <label>Other Random Questions....</label>
                 <input type="password" className="form-control" placeholder="Random Answer" />
             </div>

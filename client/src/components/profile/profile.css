@@ -2,7 +2,7 @@
     width: auto;
     text-align: center;
     height: 50px;
-    background-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    background-color:linear-gradient(to right, #12c2e9, #4f99df, #f2f1f3);
     position: relative;
     box-shadow: 5px 6px 13px white;
 }
@@ -20,7 +20,7 @@
 }
 
 @keyframes example{
-    from {top: -500px; opacity: 0%}
+    from {top: -500px; opacity: 50%}
     to {top: 20px; backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561)}
     to {transform: translateY(0); backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561); box-shadow: 5px 6px 13px white; padding-top: 10px; padding-bottom: 10px;}
 }

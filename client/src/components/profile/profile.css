@@ -4,6 +4,7 @@
     height: 50px;
     background-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
     position: relative;
+    box-shadow: 5px 6px 13px white;
 }
 
 #form-firstName{
@@ -19,16 +20,15 @@
 }
 
 @keyframes example{
-    from {top: -500px; backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561);}
-    to {top: 20px; background-color: #4a2fe2;}
-    to {transform: translateY(0);}
+    from {top: -500px; opacity: 0%}
+    to {top: 20px; backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561)}
+    to {transform: translateY(0); backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561); box-shadow: 5px 6px 13px white; padding-top: 10px; padding-bottom: 10px;}
 }
 
 #form-lastName{
     width: auto;
-    padding-top: 10px;
+    margin-top: 20px; margin-bottom: 20px;
     height: 100px;
-    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
     position: relative;
     animation-name: example;
     animation-duration: 2s;
@@ -39,22 +39,21 @@
 
 #form-company{
     width: auto;
-    padding-top: 10px;
+    margin-top: 20px; margin-bottom: 20px;
     height: 100px;
-    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
     position: relative;
     animation-name: example;
     animation-duration: 2s;
     animation-delay: .7s;
     animation-fill-mode: forwards;
     z-index: 1;
+
 }
 
 #form-city{
     width: auto;
-    padding-top: 10px;
+    margin-top: 20px; margin-bottom: 20px;
     height: 100px;
-    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
     position: relative;
     animation-name: example;
     animation-duration: 2s;
@@ -66,9 +65,8 @@
 
 #form-question{
     width: auto;
-    padding-top: 10px;
+    margin-top: 20px; margin-bottom: 20px;
     height: 100px;
-    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
     position: relative;
     animation-name: example;
     animation-duration: 2s;

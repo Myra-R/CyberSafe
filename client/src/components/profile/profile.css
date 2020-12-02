@@ -1,0 +1,76 @@
+#profile{
+    width: auto;
+    text-align: center;
+    height: 50px;
+    background-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    position: relative;
+    box-shadow: 5px 6px 13px white;
+}
+
+#form-firstName{
+    width: auto;
+    padding-top: 10px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+@keyframes example{
+    from {top: -500px; opacity: 0%}
+    to {top: 20px; backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561)}
+    to {transform: translateY(0); backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561); box-shadow: 5px 6px 13px white; padding-top: 10px; padding-bottom: 10px;}
+}
+
+#form-lastName{
+    width: auto;
+    margin-top: 20px; margin-bottom: 20px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+#form-company{
+    width: auto;
+    margin-top: 20px; margin-bottom: 20px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+
+}
+
+#form-city{
+    width: auto;
+    margin-top: 20px; margin-bottom: 20px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+   
+}
+
+#form-question{
+    width: auto;
+    margin-top: 20px; margin-bottom: 20px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}

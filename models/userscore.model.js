@@ -1,11 +1,11 @@
-var Sequelize = require("sequelize");
-var sequelize = require("../config/config.js");
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-var Userscore = sequelize.define("userscore", {
-    email: Sequelize.STRING,
-    password: Sequelize.STRING
+const userScoreSchema = new Schema({
+    email: { type: String, required: true },
+    password: { type: String, required: true }
 });
 
-Userscore.sync();
+const UserScore = mongoose.model("Userscore", userScoreSchema);
 
-module.exports = Userscore;
+module.exports = UserScore

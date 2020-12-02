@@ -1,7 +1,14 @@
+
 form{
-    margin-top: 3em;
-    max-width: 80%;
-    text-align: center;
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  margin-top: 3em;
+  margin-inline: auto;
+  max-width: 30%;
+  text-align: center;
+  background: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+  width: 550px;
+  height: 250px;
+  box-shadow: 0 9px 8px 0 rgba(10, 2, 39, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  position: relative;
+
 }

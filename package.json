@@ -8,18 +8,17 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
+    "seed": "node seeds/seed.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "express": "^4.16.4",
     "express-jwt": "^5.3.1",
     "if-env": "^1.0.4",
-    "mysql": "^2.15.0",
-    "mysql2": "^1.5.3",
-    "sequelize": "^6.3.5"
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.16"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",

@@ -1,0 +1,78 @@
+#profile{
+    width: auto;
+    text-align: center;
+    height: 50px;
+    background-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    position: relative;
+}
+
+#form-firstName{
+    width: auto;
+    padding-top: 10px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+@keyframes example{
+    from {top: -500px; backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561);}
+    to {top: 20px; background-color: #4a2fe2;}
+    to {transform: translateY(0);}
+}
+
+#form-lastName{
+    width: auto;
+    padding-top: 10px;
+    height: 100px;
+    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+#form-company{
+    width: auto;
+    padding-top: 10px;
+    height: 100px;
+    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+#form-city{
+    width: auto;
+    padding-top: 10px;
+    height: 100px;
+    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+   
+}
+
+#form-question{
+    width: auto;
+    padding-top: 10px;
+    height: 100px;
+    background-color: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}

@@ -1,7 +1,45 @@
 form{
-    margin-top: 3em;
-    max-width: 80%;
+    /* margin: 50%; */
+    max-width: 50%;
     text-align: center;
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    align-items: center;
+    background-color: transparent;
+    margin-left: 50%;
+    margin-top: 25%;
+    /* background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); */ 
+
+}
+
+.form-text{
+  color: rgb(40, 40, 99);
+  font-weight: 50px ;
+  padding-top:6px;
+}
+
+.form-group {
+  font-size: x-large;
+}
+
+.container {
+  background-color: white;
+  margin: auto;
+  margin-top: 50 px;
+  width: 35%;
+  border: 3px solid ;
+  border-radius: 25px;
+  border-width: 6px;
+  box-shadow: 5px 5px 5px 5px rgb(218, 211, 211);
+  padding: 0%;
+  align-items: center;
+}
+
+.form-group {
+align-items: center;
+padding:10px
+}
+
+.form-control {
+  align-items: center;
+  padding: 10px;
 }

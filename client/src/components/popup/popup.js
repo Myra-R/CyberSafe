@@ -6,8 +6,8 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
+				{/* <p> */}
+					{/* Edit <code>src/App.js</code> and save to reload.
         </p>
 				<a
 					className="App-link"
@@ -16,7 +16,7 @@ function App() {
 					rel="noopener noreferrer"
 				>
 					Learn React
-        </a>
+        </a> */}
 			</header>
 			<FeedBack
 				style={{ zIndex: '1', position: 'fixed', right: '50%!' }}

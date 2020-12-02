@@ -37,5 +37,8 @@ import './profile.css';
               
             </form>
         );
-    }
+    
+
+}
+
 export default Profile; 

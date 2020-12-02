@@ -65,7 +65,8 @@
 
 #form-question{
     width: auto;
-    margin-top: 20px; margin-bottom: 20px;
+    margin-top: 20px; margin-bottom: 100px;
+    padding-bottom: 50px;
     height: 100px;
     position: relative;
     animation-name: example;
@@ -74,3 +75,13 @@
     animation-fill-mode: forwards;
     z-index: 1;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }

@@ -12,7 +12,6 @@ var fileArr = fs.readFileSync(fileUrl, "utf8").split("\n");
 var passSeed = [];
 console.log("Pre array load");
 for (var i = 0; i < fileArr.length; i++) {
-    // passSeed.push({name: ${fileArr[i]}});
     var obj = {
         name: fileArr[i]
     }
@@ -24,7 +23,6 @@ console.log("Post array load");
 console.log("Pre db inserting of seed");
 db.Pass.deleteMany({})
     .then(() => db.Pass.collection.insertMany(passSeed))
-    // .then(passSeed.map(el => db.Pass.collection.insertMany(el)))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);

@@ -19,14 +19,14 @@ function App() {
         </a>
 			</header>
 			<FeedBack
-				style={{zIndex:'1', position:'fixed', right:'50%!'}}
+				style={{ zIndex: '1', position: 'fixed', right: '50%!' }}
 				position="right"
 				numberOfStars={5}
 				headerText="Hello"
 				bodyText="Custom Body test"
 				buttonText="This is also custom"
 				handleClose={() => console.log("handleclose")}
-				handleSubmit={(data) => 
+				handleSubmit={(data) =>
 					fetch('https://formspree.io/moqjznjg', {
 						headers: {
 							Accept: 'application/json',
@@ -34,7 +34,7 @@ function App() {
 						},
 						method: 'POST', // or 'PUT'
 						body: JSON.stringify(data),
-					}).then((response) => { 
+					}).then((response) => {
 						if (!response.ok) {
 							return Promise.reject('Our servers are having issues! We couldn\'t send your feedback!');
 						}

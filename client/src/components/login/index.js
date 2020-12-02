@@ -7,6 +7,7 @@ import Dropdown from "../Dropdown/dropdown"
         function Login() {
         return (
             <div className="container">
+                <Dropdown/>
             <form className="form">
                 <h3>Login</h3>
 

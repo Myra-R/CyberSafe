@@ -1,5 +1,6 @@
-const User = require("./user.model")
-const Userscore = require("./userscore.model")
+// Collect the various models into one export location
 module.exports = {
-    User, Userscore
+    User: require("./user.model"),
+    Userscore: require("./userscore.model"),
+    Pass: require("./pass.model")
 }

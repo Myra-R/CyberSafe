@@ -4,7 +4,7 @@ var db = require("../models");
 var fs = require("fs");
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/testpassword",
+    process.env.MONGODB_URI || "mongodb://localhost/cyber_safe_db",
     { useNewUrlParser: true }
 );
 

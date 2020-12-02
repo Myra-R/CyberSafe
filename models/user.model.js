@@ -1,12 +1,12 @@
-var Sequelize = require("sequelize");
-var sequelize = require("../config/config.js");
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-var User = sequelize.define("user", {
-    score: Sequelize.STRING,
-    negatives: Sequelize.TEXT,
-    positives: Sequelize.TEXT
-});
+const userSchema = new Schema({
+    score: { type: String, required: true },
+    negatives: { type: String, required: true },
+    positives: { type: String, required: true }
+})
 
-User.sync();
+const User = mongoose.model("User", userSchema)
 
 module.exports = User;

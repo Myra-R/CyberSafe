@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
+import FooterPage from "../footer";
 
 
 function Login() {
@@ -68,7 +69,11 @@ function Login() {
                     login
                 </button>
             </form>
+            <footer>
+            <FooterPage/>
+            </footer>
         </div>
     );
 }
+
 export default Login; 

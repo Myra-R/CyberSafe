@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
 import FooterPage from "../footer";
 
 
-
-
 function Login() {
-
+    const history = useHistory();
     const [formObject, setFormObject] = useState({})
 
     function handleInputChange(event) {
@@ -19,12 +19,14 @@ function Login() {
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.firstName && formObject.lastName && formObject.email && formObject.password) {
+            let path = "/profile"
             API.saveUser({
                 firstName: formObject.firstName,
                 lastName: formObject.lastName,
                 email: formObject.email,
                 password: formObject.password
             })
+            history.push(path);
         }
     }
 
@@ -63,7 +65,7 @@ function Login() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
-                <button  onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-5">
+                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-5">
                     login
                 </button>
             </form>

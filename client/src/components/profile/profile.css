@@ -2,9 +2,9 @@
     width: auto;
     text-align: center;
     height: 50px;
-    background-color:linear-gradient(to right, #12c2e9, #4f99df, #f2f1f3);
     position: relative;
     box-shadow: 5px 6px 13px white;
+    background-color: rgb(91, 168, 199);
 }
 
 #form-firstName{
@@ -21,8 +21,8 @@
 
 @keyframes example{
     from {top: -500px; opacity: 50%}
-    to {top: 20px; backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561)}
-    to {transform: translateY(0); backround-color:linear-gradient(to right, #12c2e9, #4a2fe2, #280561); box-shadow: 5px 6px 13px white; padding-top: 10px; padding-bottom: 10px;}
+    to {top: 20px; backround-color: white;}
+    to {transform: translateY(0); background-color: rgb(223, 238, 241); opacity: 80%; box-shadow: 5px 9px 13px rgb(78, 176, 233); padding-top: 10px; padding-bottom: 10px;}
 }
 
 #form-lastName{

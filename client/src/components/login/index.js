@@ -21,7 +21,7 @@ function Login() {
                 lastName: formObject.lastname,
                 email: formObject.email,
                 password: formObject.password
-            })
+            }).then(console.log("User added successfully"))
         }
     }
 

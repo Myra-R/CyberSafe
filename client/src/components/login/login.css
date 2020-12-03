@@ -4,10 +4,10 @@ form{
   margin-inline: auto;
   max-width: 30%;
   text-align: center;
-  background: linear-gradient(to right, #12c2e9, #4a2fe2, #280561);
+  box-shadow: 5px 6px 23px white;
+  background-color: rgb(91, 168, 199);
   width: 550px;
   height: auto;
-  box-shadow: 0 9px 8px 0 rgba(10, 2, 39, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   /* position: relative; */
 }
@@ -19,9 +19,9 @@ form{
 }
 
 .form-group {
-  font-size: x-large;
+  font-size: large;
 }
-
+/* 
 .container {
   background-color: white;
   margin: auto;
@@ -33,7 +33,7 @@ form{
   box-shadow: 5px 5px 5px 5px rgb(218, 211, 211);
   padding: 0%;
   align-items: center;
-}
+} */
 
 .form-group {
 align-items: center;

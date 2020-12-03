@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
+import FooterPage from "../footer";
 
 
 function Login() {
@@ -61,7 +62,11 @@ function Login() {
                 </div>
 
             </form>
+            <footer>
+            <FooterPage/>
+            </footer>
         </div>
     );
 }
+
 export default Login; 

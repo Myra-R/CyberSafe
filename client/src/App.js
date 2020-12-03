@@ -4,6 +4,7 @@ import Login from './components/login'
 import Profile from './components/profile'
 import Resutls from './components/results'
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import FooterPage from './components/footer'
 
 function App() {
   return (

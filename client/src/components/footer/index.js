@@ -1,6 +1,6 @@
-// import React from "react";
-// import './footer.css';
-// import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import React from "react";
+import './footer.css';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const FooterPage = () => {
     return (
@@ -43,4 +43,4 @@ const FooterPage = () => {
     );
   }
   
-//   export default FooterPage;
+  export default FooterPage;

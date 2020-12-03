@@ -1,5 +1,8 @@
 import axios from "axios";
 
+// Flow chart cheat sheet: 
+  // src/components/login => Here => routes\api\ => controllers\ => models\
+
 export default {
   // Gets User by id
   getUser: function(id) {

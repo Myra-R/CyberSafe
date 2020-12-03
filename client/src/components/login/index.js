@@ -4,6 +4,8 @@ import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
 
 
+
+
 function Login() {
 
     const [formObject, setFormObject] = useState({})
@@ -18,7 +20,7 @@ function Login() {
         if (formObject.firstName && formObject.lastName && formObject.email && formObject.password) {
             API.saveUser({
                 firstName: formObject.firstName,
-                lastName: formObject.lastname,
+                lastName: formObject.lastName,
                 email: formObject.email,
                 password: formObject.password
             })
@@ -27,7 +29,7 @@ function Login() {
 
 
     return (
-        <div className="container">
+        <div className="container my-container">
             <Dropdown />
             <form className="form">
                 <h3>Login</h3>
@@ -60,6 +62,9 @@ function Login() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
+                <button  onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-5">
+                    login
+                </button>
             </form>
         </div>
     );

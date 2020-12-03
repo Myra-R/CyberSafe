@@ -14,7 +14,7 @@ export default {
     return axios.post("/api/user", userData);
   },
   // Saves userscore to the database
-  saveUserscore: function(data) {
-      return axios.post("/api/userscore", data)
+  saveUserScore: function(data) {
+      return axios.post("/api/userScore", data)
   }
 };

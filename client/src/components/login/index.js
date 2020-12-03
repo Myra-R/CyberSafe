@@ -19,13 +19,29 @@ function Login() {
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.firstName && formObject.lastName && formObject.email && formObject.password) {
-            let path = "/profile"
             API.saveUser({
                 firstName: formObject.firstName,
                 lastName: formObject.lastName,
                 email: formObject.email,
                 password: formObject.password
             })
+            let positives = []
+            let negatives = []
+            let score = 0
+            if (formObject.password.len >= 11) {
+                score += 20;
+                positives.push("Your password is 11 or more characters long!")
+            }
+            else {
+                negatives.push("Your password is less than 11 characters long")
+            };
+            console.log(positives, negatives, score)
+            API.saveUserScore({
+                score: score,
+                negatives: negatives,
+                positives: positives
+            })
+            let path = "/profile"
             history.push(path);
         }
     }
@@ -69,9 +85,9 @@ function Login() {
                     login
                 </button>
             </form>
-            <footer>
-            <FooterPage/>
-            </footer>
+            {/* <footer>
+                <FooterPage />
+            </footer> */}
         </div>
     );
 }

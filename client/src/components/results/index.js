@@ -39,9 +39,9 @@ function Results() {
 
 
             </form>
-            <footer>
+            {/* <footer>
             <FooterPage/>
-            </footer>
+            </footer> */}
         </div>
     );
 

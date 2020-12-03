@@ -86,7 +86,7 @@ function Login() {
                 </button>
             </form>
             {/* <footer>
-                <FooterPage />
+            <FooterPage/>
             </footer> */}
         </div>
     );

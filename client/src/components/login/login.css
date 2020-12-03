@@ -9,8 +9,7 @@ form{
   width: 550px;
   height: auto;
   text-align: center;
-  position: relative;
-
+  /* position: relative; */
 }
 
 .form-text{

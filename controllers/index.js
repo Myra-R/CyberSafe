@@ -1,4 +1,4 @@
 module.exports = {
     User: require("./user.controller"),
-    Userscore: require("./userscore.controller")
+    UserScore: require("./userscore.controller")
 }

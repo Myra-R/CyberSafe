@@ -1,5 +1,8 @@
 import axios from "axios";
 
+// Flow chart cheat sheet: 
+  // src/components/login => Here => routes\api\ => controllers\ => models\
+
 export default {
   // Gets User by id
   getUser: function(id) {
@@ -14,7 +17,7 @@ export default {
     return axios.post("/api/user", userData);
   },
   // Saves userscore to the database
-  saveUserscore: function(data) {
-      return axios.post("/api/userscore", data)
+  saveUserScore: function(data) {
+      return axios.post("/api/userScore", data)
   }
 };

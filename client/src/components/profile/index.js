@@ -37,11 +37,11 @@ function Profile() {
                     <input type="password" className="form-control" placeholder="Random Answer" />
                 </div>
             
-
-            </form>
-            <footer>
+                {/* <footer>
             <FooterPage/>
-            </footer>
+            </footer> */}
+            </form>
+            
         </div>
 
     );

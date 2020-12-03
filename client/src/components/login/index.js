@@ -67,9 +67,9 @@ function Login() {
                     login
                 </button>
             </form>
-            <footer>
+            {/* <footer>
             <FooterPage/>
-            </footer>
+            </footer> */}
         </div>
     );
 }

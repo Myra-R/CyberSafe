@@ -4,6 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const FooterPage = () => {
     return (
+        <footer className="realFooter">
       <MDBFooter color="blue" className="footercontainers">
         <MDBContainer fluid id="footerContainer">
           <MDBRow>
@@ -38,6 +39,7 @@ const FooterPage = () => {
           </MDBContainer>
         </div>
       </MDBFooter>
+      </footer>
     );
   }
   

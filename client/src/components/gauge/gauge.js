@@ -1,6 +1,6 @@
 import React from 'react';
 import GaugeChart from 'react-gauge-chart';
-import { score } from "../login/index";
+import { score } from "../profile/index";
 
 
 function Gauge() {
@@ -8,7 +8,7 @@ function Gauge() {
         <div>
             <GaugeChart id="gauge-chart3"
                 nrOfLevels={30}
-                colors={["#FF5F6D", "#FFC371"]}
+                colors={["#FF5F6D", "#00FF00"]}
                 arcWidth={0.3}
                 percent={score/100}
             />

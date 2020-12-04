@@ -10,26 +10,28 @@ var positives = ["y", "e", "s"];
 var negatives = ["n", "o"];
 
 function Results() {
-    let scoreColor = $("<span class= 'at-risk'>");
     const posItems = positives.map((pos) =>
     <li>{pos}</li>);
     const negItems = negatives.map((neg) =>
     <li>{neg}</li>);
     
 //color coding results
-    if (score < 100) {
-        scoreColor = $("<span class= 'at-risk'>");
-    }
-    else if ({score} < 200) {
-        scoreColor = $("<span class= 'adequate'>");
+    let results = ""
+    if (score < 100) { 
+    results=  "at-risk"  
+    }          
+
+    
+    else if (score < 200) {
+       results = "adequate";
     }
     else {
-        scoreColor = $("<span class= 'safe'>");
+        results = "safe";
     };
 
 
-    scoreColor.text({score});
-    $(".test-results").append(scoreColor);
+    // scoreColor.text({score});
+    // $(".test-results").append(scoreColor);
 
 
     return (
@@ -37,7 +39,7 @@ function Results() {
             <form className="form">
                 <h1>Results</h1>
                 <br />
-                <span class="test-results">You Scored {score}</span>
+                <h2 class= {results} id= "results">You Scored {score}</h2>
 
 
                 <div className="form-group password-test">

@@ -11,3 +11,15 @@
     height: 84vh;
     overflow: auto;
 }
+
+.safe {
+    background-color: green;
+}
+
+.adequate {
+    background-color: yellow;
+}
+
+.at-risk {
+    background-color: red;
+}

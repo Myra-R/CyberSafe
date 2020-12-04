@@ -1,0 +1,38 @@
+
+form{
+  margin-top: 2em;
+  margin-inline: auto;
+  max-width: 30%;
+  text-align: center;
+  box-shadow: 5px 6px 23px white;
+  background-color: rgb(91, 168, 199);
+  width: 550px;
+  height: 74vh;
+  overflow: auto;
+  text-align: center;
+  /* position: relative; */
+}
+
+.form-text{
+  color: rgb(40, 40, 99);
+  font-weight: 50px ;
+  padding-top:6px;
+}
+
+.form-group {
+  font-size: large;
+}
+
+.form-group {
+align-items: center;
+padding:10px
+}
+
+.form-control {
+  align-items: center;
+  padding: 10px;
+}
+
+#loginBtn{
+  margin-bottom: .5em;
+}

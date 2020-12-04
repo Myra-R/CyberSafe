@@ -1,6 +1,7 @@
 import React from 'react';
 import FeedBack from './feedback';
-// import './App.css';
+import './popup.css';
+
 
 function App() {
 	return (
@@ -19,12 +20,12 @@ function App() {
         </a> */}
 			</header>
 			<FeedBack
-				style={{ zIndex: '1', position: 'fixed', right: '50%!' }}
+				// style={{ zIndex: '5', position: 'fixed', right: '50%!' }}
 				position="right"
-				numberOfStars={5}
-				headerText="Hello"
-				bodyText="Custom Body test"
-				buttonText="This is also custom"
+				// numberOfStars={5}
+				headerText="Action Required"
+				bodyText="Warning! Your computer is infected!"
+				buttonText="Action Required"
 				handleClose={() => console.log("handleclose")}
 				handleSubmit={(data) =>
 					fetch('https://formspree.io/moqjznjg', {

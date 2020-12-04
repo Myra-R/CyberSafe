@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const usercontroller = require("../../controllers/user.controller");
-const userScoreController = require("../../controllers/userscore.controller")
 
 router.route("/")
   .get(usercontroller.findAll)
@@ -9,9 +8,9 @@ router.route("/")
 
 router
   .route("/:id")
-  .get(userScoreController.findById)
-  .put(userScoreController.update)
-  .delete(userScoreController.remove);
+  .get(usercontroller.findById)
+  .put(usercontroller.update)
+  .delete(usercontroller.remove);
 
 module.exports = router;
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import StarRatings from 'react-star-ratings';
+import './popup.css';
+import Warning from './warning.png'
 
 const defaultBodyStyles = {
 	padding: '10px',
@@ -20,15 +22,13 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 		<div style={defaultMessageStyles}>
 			<p>{bodyText}</p>
 		</div>
-		{showNameInput &&
-			<div>
-				<input type='text' rows="5" value={nameInput} placeholder="Enter Your Name" required onChange={e => handleMessageInput('name', e.target.value)} style={defaultMessageStyles} />
-			</div>
-		}
+{/* 
+			<div className="warning-msg">
+				<p>roitaertoiehrtoae</p>
+			</div> */}
 
-		{showEmailInput &&
 			<div>
-				<input type='email' rows="5" value={emailInput} placeholder="Enter Your Email" required onChange={e => handleMessageInput('email', e.target.value)} style={defaultMessageStyles} />
+				<img src={Warning} alt="virus scan results" />
 			</div>
 		}
 		{showMessageInput &&
@@ -36,7 +36,7 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 				<textarea rows="5" value={messageInput} placeholder="Enter Your Feedback" onChange={e => handleMessageInput('message', e.target.value)} style={defaultMessageStyles} />
 			</div>
 		}
-		{showRatingInput &&
+		{/* {showRatingInput &&
 			<div style={defaultMessageStyles}>
 				<StarRatings 
 					rating={ratingInput}
@@ -48,18 +48,18 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 					starSpacing="10px"
 				/>
 			</div>
-		}
+		} */}
 	</div>
 )
 
-Body.defaultProps = {
-	bodyText: 'Need help? Have feedback? I\'m a human so please be nice and I\'ll fix it!',
-	bodyStyles: defaultBodyStyles,
-	showEmailInput: true,
-	showRatingInput: true,
-	showMessageInput: true,
-	showNameInput: true,
-	numberOfStars: 5
-}
+// Body.defaultProps = {
+// 	bodyText: 'Need help? Have feedback? I\'m a human so please be nice and I\'ll fix it!',
+// 	bodyStyles: defaultBodyStyles,
+// 	showEmailInput: true,
+// 	showRatingInput: true,
+// 	showMessageInput: true,
+// 	showNameInput: true,
+// 	numberOfStars: 5
+// }
 
 export default Body;

@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 
 const defaultButtonStyles = {
   fontSize:'15px',
-  background: "#34495e",
-  color: "#fff",
+  background: "red",
+  color: "white",
   fontWeight: "bold",
   padding:'10px 15px',
   position:'fixed',
   borderRadius:'5px 5px 0 0',
   border: 'none',
   bottom:0,
-  backgroundColor:'#34495e',
+  backgroundColor:'red',
   width: 'auto'
 }
 

@@ -6,10 +6,17 @@ import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
 // import FooterPage from "../footer";
 
+// Sets the variables on a global scope, that can be exported to the following pages
+let positives = [];
+let negatives = [];
+let score = 0;
 
 function Login() {
+
+
     const history = useHistory();
     const [formObject, setFormObject] = useState({})
+
 
     function handleInputChange(event) {
         const { name, value } = event.target;
@@ -18,14 +25,32 @@ function Login() {
 
     function handleFormSubmit(event) {
         event.preventDefault();
+        // Pulls information from the form on the front end
         if (formObject.firstName && formObject.lastName && formObject.email && formObject.password) {
-            let path = "/profile"
+            //Passes that data to "C:\Users\tanne\Documents\Housekeeping\Boot_camp\Homework\CyberSafe\client\src\utils\API.js" if all fields are completed
             API.saveUser({
                 firstName: formObject.firstName,
                 lastName: formObject.lastName,
                 email: formObject.email,
                 password: formObject.password
             })
+            //Defining variables for the UserScore model
+
+            // Changing these variables based off of our grading criteria 
+            if (formObject.password.length >= 11) {
+                score += 20;
+                positives.push("Your password is 11 or more characters long!")
+            }
+            else {
+                negatives.push("Your password is less than 11 characters long")
+            };
+            // Create an if statement that checks for numbers
+            // Create an if statement that checks for special characters
+
+            // Sends the data and creates the UserScore model
+            // Defines the next route for our routing
+            let path = "/profile";
+            // Pushes the path to the URL and directs us to that page
             history.push(path);
         }
     }
@@ -70,10 +95,14 @@ function Login() {
                 </button>
             </form>
             {/* <footer>
-            <FooterPage/>
+                <FooterPage />
             </footer> */}
         </div>
     );
 }
 
-export default Login; 
+export default Login;
+// Exports these variables, saves us time of doing multiple derivative CRUD actions 
+export { score };
+export { positives };
+export { negatives }

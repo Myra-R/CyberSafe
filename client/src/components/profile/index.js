@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 
 
 function Profile() {
+    console.log(score, positives, negatives)
     const history = useHistory();
     const [formObject, setFormObject] = useState({})
 
@@ -24,6 +25,13 @@ function Profile() {
             });
             let path = "/results";
             history.push(path);
+        }
+        if (formObject.firstName === "Jim"){
+            score += 20;
+            positives.push("Your name is jim!")
+        }
+        else {
+            negatives.push("your name is not Jim.")
         }
     }
 
@@ -58,7 +66,9 @@ function Profile() {
                     <label>Other Random Questions....</label>
                     <input type="password" className="form-control" placeholder="Random Answer" />
                 </div>
-
+                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
+                    Submit
+                </button>
                 {/* <footer>
             <FooterPage/>
             </footer> */}

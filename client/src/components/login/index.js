@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
-import FooterPage from "../footer";
+// import FooterPage from "../footer";
 
 
 function Login() {
@@ -34,7 +34,7 @@ function Login() {
     return (
         <div className="container my-container">
             <Dropdown />
-            <form className="form">
+            <form className="formLogin">
                 <h3>Login</h3>
 
                 <div className="form-group">
@@ -65,7 +65,7 @@ function Login() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
-                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-5">
+                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
                     login
                 </button>
             </form>

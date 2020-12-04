@@ -6,3 +6,8 @@
 .results {
     display: flex;
 }
+
+.form{
+    height: 84vh;
+    overflow: auto;
+}

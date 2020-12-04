@@ -1,13 +1,14 @@
 
 form{
-  margin-top: 3em;
+  margin-top: 2em;
   margin-inline: auto;
   max-width: 30%;
   text-align: center;
   box-shadow: 5px 6px 23px white;
   background-color: rgb(91, 168, 199);
   width: 550px;
-  height: auto;
+  height: 74vh;
+  overflow: auto;
   text-align: center;
   /* position: relative; */
 }
@@ -21,19 +22,6 @@ form{
 .form-group {
   font-size: large;
 }
-/* 
-.container {
-  background-color: white;
-  margin: auto;
-  margin-top: 50px;
-  width: 35%;
-  border: 3px solid ;
-  border-radius: 25px;
-  border-width: 6px;
-  box-shadow: 5px 5px 5px 5px rgb(218, 211, 211);
-  padding: 0%;
-  align-items: center;
-} */
 
 .form-group {
 align-items: center;
@@ -43,4 +31,8 @@ padding:10px
 .form-control {
   align-items: center;
   padding: 10px;
+}
+
+#loginBtn{
+  margin-bottom: .5em;
 }

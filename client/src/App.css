@@ -6,4 +6,6 @@ body {
     height: auto;
     background-attachment: fixed;
     background-position: center;
+    height:90vh;
+    overflow:auto;
 }

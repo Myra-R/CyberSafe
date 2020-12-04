@@ -4,7 +4,7 @@ import Login from './components/login'
 import Profile from './components/profile'
 import Resutls from './components/results'
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import FooterPage from './components/footer'
+import FooterPage from './components/footer'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/results" component={Resutls} />
     
-    {/* <FooterPage></FooterPage> */}
+    <FooterPage></FooterPage>
     </Router>
   );
 }

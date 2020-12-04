@@ -1,10 +1,10 @@
 #profile{
     width: auto;
     text-align: center;
-    height: 50px;
+    height: 100%;
     position: relative;
     box-shadow: 5px 6px 13px white;
-    background-color: rgb(91, 168, 199);
+    background-color: none !important;
 }
 
 #form-firstName{

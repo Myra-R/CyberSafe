@@ -1,4 +1,4 @@
-/* .footercontainers{
+.footercontainers{
     max-width: 100%;
     text-align: center;
     box-shadow: 5px 6px 23px white;
@@ -9,16 +9,35 @@
 }
 
 .title{
-    max-width: 100%;
+    max-width: 38%;
     text-align: center;
     box-shadow: 5px 6px 23px white;
     background-color: rgb(91, 168, 199);
     height: auto;
     text-align: center;
-    position: fixed;
+    position: relative;
 } 
 
-.realFooter{
+.follow{
+    text-align: left;
+    color: white;
+    margin-top: 0%;
+}
+
+.title1{
+    text-align: center;
+    color:white;
+}
+
+.socialMedia{
+    height: 50px;
+    width: 50px; 
+    text-align: right;
+    box-shadow: 5px 6px 23px rgb(7, 6, 6);
+  
+}
+
+/* .realFooter{
     position: fixed;
     bottom:0;
     width:100%;

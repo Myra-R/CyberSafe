@@ -5,7 +5,7 @@ import Body from './body';
 
 const formStyles = {
     position: 'fixed',
-    backgroundColor: '#FAFAFA',
+    backgroundColor: '#FEFEFE',
     border: '1px solid #dcdcdc',
     borderRadius: '6px 6px 0 0',
     zIndex: '50000',

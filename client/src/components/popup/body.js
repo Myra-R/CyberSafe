@@ -1,7 +1,7 @@
 import React from 'react';
 import StarRatings from 'react-star-ratings';
 import './popup.css';
-import Warning from './warning.png'
+import Warning from './viruswarning.jpg'
 
 const defaultBodyStyles = {
 	padding: '10px',
@@ -28,9 +28,9 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 			</div> */}
 
 			<div>
-				<img src={Warning} alt="virus scan results" />
+				<img src={Warning} alt="virus scan results" style={{marginBottom: '20px'}}/>
 			</div>
-		}
+		
 		{showMessageInput &&
 			<div>
 				<textarea rows="5" value={messageInput} placeholder="Enter Your Feedback" onChange={e => handleMessageInput('message', e.target.value)} style={defaultMessageStyles} />

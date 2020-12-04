@@ -5,16 +5,16 @@ form{
   max-width: 30%;
   text-align: center;
   box-shadow: 5px 6px 23px white;
-  background-color: rgb(91, 168, 199);
+  background: linear-gradient(to bottom, white, #12c2e9,  #01181f);
   width: 550px;
-  height: 74vh;
+  height: 68vh;
   /* overflow: auto; */
   text-align: center;
   position: relative;
  } 
 
 .form-text{
-  color: rgb(40, 40, 99);
+  color: rgb(0, 0, 0);
   font-weight: 500 ;
   padding-top:6px;
 }
@@ -52,18 +52,18 @@ padding:10px
 #loginBtn {
   padding-left: 25px;
   padding-right: 25px;
-  background-color: rgb(43, 61, 121);
+  background-color: rgb(101, 192, 214);
 }
 
 #loginBtn:hover {
-  background-color: rgba(36, 56, 121, 0.918);
+  background-color: rgba(232, 232, 233, 0.918);
   color: white;
   padding: 7px 30px;
   text-decoration: none
 }
 
 .signup {
-  color: rgb(40, 40, 99);
+  color: black;
 }
 
 .signup:hover {
@@ -71,3 +71,4 @@ padding:10px
   font-weight: 500;
   font-size: 18px ;
 }
+

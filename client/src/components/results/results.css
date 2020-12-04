@@ -2,9 +2,11 @@
     font-size: larger;
     font-weight: bold;
     display: flex;
+    color:white
 }
 .results {
     display: flex;
+    color:black
 }
 
 .form{
@@ -13,13 +15,13 @@
 }
 
 .safe {
-    background-color: green;
+    background-color: rgb(92, 194, 92);
 }
 
 .adequate {
-    background-color: yellow;
+    background-color: rgb(209, 209, 9);
 }
 
 .at-risk {
-    background-color: red;
+    background-color: rgb(112, 5, 5);
 }

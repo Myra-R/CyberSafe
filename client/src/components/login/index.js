@@ -60,9 +60,9 @@ function Login() {
         <div className="container my-container">
             <Dropdown />
             <form className="formLogin">
-                <h3>Login</h3>
+                <h3>Sign in</h3>
 
-                <div className="form-group">
+                {/* <div className="form-group">
                     <input type="text" className="form-control" placeholder="First name"
                         onChange={handleInputChange}
                         name="firstName" />
@@ -74,7 +74,7 @@ function Login() {
                         onChange={handleInputChange}
                         name="lastName" /> <b></b>
                     <div className="form-label"><label className="form-text">Last name</label></div>
-                </div>
+                </div> */}
 
                 <div className="form-group">
                     <input type="email" className="form-control" placeholder="Enter email"
@@ -91,8 +91,9 @@ function Login() {
                 </div>
 
                 <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
-                    login
+                    Signin
                 </button>
+
             </form>
             {/* <footer>
                 <FooterPage />

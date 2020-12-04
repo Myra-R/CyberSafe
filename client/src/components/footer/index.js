@@ -1,11 +1,11 @@
 import React from "react";
 import './footer.css';
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+// import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const FooterPage = () => {
     return (
         <footer className="realFooter">
-      <MDBFooter color="blue" className="footercontainers">
+      {/* <MDBFooter color="blue" className="footercontainers">
         <MDBContainer fluid id="footerContainer">
           <MDBRow>
             <MDBCol md="6">
@@ -38,7 +38,7 @@ const FooterPage = () => {
             &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
           </MDBContainer>
         </div>
-      </MDBFooter>
+      </MDBFooter> */}
       </footer>
     );
   }

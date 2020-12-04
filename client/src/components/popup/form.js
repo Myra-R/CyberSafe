@@ -9,7 +9,7 @@ const formStyles = {
     border: '1px solid #dcdcdc',
     borderRadius: '6px 6px 0 0',
     zIndex: '50000',
-    bottom: '0px'
+    bottom: '25%'
 }
 
 class Form extends Component {

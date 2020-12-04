@@ -9,10 +9,10 @@ const isEmpty = str => !str.trim().length;
 const handleCustomPosition = ((position, formStyles) => {
 	var customFormStyles;
 	if (position==="left") {
-		customFormStyles = {...formStyles, left: "5%"};
+		customFormStyles = {...formStyles, left: "25%"};
 	}
 	else {
-		customFormStyles = {...formStyles, right: "5%"};
+		customFormStyles = {...formStyles, right: "25%"};
 	} 
 	return customFormStyles;
 })
@@ -64,7 +64,7 @@ class Feedback extends Component {
 		const { showButtonOnSubmit, handleSubmit, handleClose } = this.props;
 		// Check if the values are missing.
 		if (isEmpty(this.state.nameInput) || isEmpty(this.state.emailInput) || isEmpty(this.state.messageInput) || (this.state.ratingInput===-1)) {
-			alert("Fields are missing!");
+			alert("You failed!!");
 		} else {
 			handleSubmit({
 				name: this.state.nameInput,
@@ -105,6 +105,7 @@ class Feedback extends Component {
 			numberOfStars,
 			style
 		} = this.props;
+		console.log(style)
 
 		return (
 			<div>

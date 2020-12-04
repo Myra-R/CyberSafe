@@ -94,11 +94,13 @@ function Login() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
-                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
-                <Link to="/profile">Sign in</Link>
+                <button onClick={handleFormSubmit} className="btn btn-dark" id="loginBtn">
+                    <Link to="/profile" className="link">Sign in</Link>
                 </button>
 
-                <Link to="/signup">Creat Account</Link>
+                <div>
+                    <Link to="/signup" className="signup link signup-link">Creat Account</Link>
+                </div>
 
             </form>
             {/* <footer>

@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 
 
 function Profile() {
+    console.log(score, positives, negatives)
     const history = useHistory();
     const [formObject, setFormObject] = useState({})
 
@@ -58,7 +59,9 @@ function Profile() {
                     <label>Other Random Questions....</label>
                     <input type="password" className="form-control" placeholder="Random Answer" />
                 </div>
-
+                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
+                    Submit
+                </button>
                 {/* <footer>
             <FooterPage/>
             </footer> */}

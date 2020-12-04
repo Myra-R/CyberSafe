@@ -34,21 +34,23 @@ function Login() {
                 email: formObject.email,
                 password: formObject.password
             })
-            //Defining variables for the UserScore model
-
             // Changing these variables based off of our grading criteria 
             if (formObject.password.length >= 11) {
                 score += 20;
-                positives.push("Your password is 11 or more characters long!")
+                positives.push(`Your password length was ${formObject.password.length} characters, passwords should have at least 11 character.`)
             }
             else {
-                negatives.push("Your password is less than 11 characters long")
+                negatives.push(`Your password length was ${formObject.password.length} characters, passwords should have at least 11 character.`)
             };
-            // Create an if statement that checks for numbers
-            // Create an if statement that checks for special characters
-
-            // Sends the data and creates the UserScore model
-            // Defines the next route for our routing
+            var expressions = /^[a-zA-Z0-9!@#$%^&*]$/;
+            // Create an if statement that checks for numbers and characters
+            if (!expressions.test(formObject.password)) {
+                score += 20;
+                positives.push("You have added special characters to your password.")
+            }
+            else {
+                negatives.push("You should add special characters and numbers to your passwords.")
+            }
             let path = "/profile";
             // Pushes the path to the URL and directs us to that page
             history.push(path);

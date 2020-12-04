@@ -1,49 +1,60 @@
 import React from "react";
 import FooterPage from "../footer";
 import './results.css';
+import $ from "jquery";
 
+
+// import { score, positives, negatives } from "../login/index";
+var score = 50;
+var positives = ["y", "e", "s"];
+var negatives = ["n", "o"];
 
 function Results() {
+    const posItems = positives.map((pos) =>
+    <li>{pos}</li>);
+    const negItems = negatives.map((neg) =>
+    <li>{neg}</li>);
+    
+//color coding results
+    let results = ""
+    if (score < 100) { 
+    results=  "at-risk"  
+    }          
+
+    
+    else if (score < 200) {
+       results = "adequate";
+    }
+    else {
+        results = "safe";
+    };
+
+
+    // scoreColor.text({score});
+    // $(".test-results").append(scoreColor);
+
+
     return (
         <div>
             <form className="form">
                 <h1>Results</h1>
                 <br />
-                <h2 class="test-results">You Scored (Total Score)</h2>
+                <h2 class= {results} id= "results">You Scored {score}</h2>
 
 
                 <div className="form-group password-test">
-                    <label className="subject subject-password">Password Security</label>
-                    <label className="results results-password">Password Results</label>
+                    <label className="subject subject-password">Positives</label>
+                    <ul>{posItems}</ul>
                     <br />
-                    <label className="subject subject-password">Password Security</label>
-                    <label className="results results-password">Password Results</label>
+                    <label className="subject subject-password">Negatives</label>
+                    <ul>{negItems}</ul>
                 </div>
-                <br />
-                <div className="form-group personal-test">
-                    <label className="subject subject-Personal">Personal Security</label>
-                    <label className="results results-Personal">Personal Results</label>
-                    <br />
-                    <label className="subject subject-Personal">Personal Security</label>
-                    <label className="results results-Personal">Personal Results</label>
-                </div>
-                <br />
-                <div className="form-group website-test">
-                    <label className="subject subject-Website">Website Security</label>
-                    <label className="results results-Website">Website Results</label>
-                    <br />
-                    <label className="subject subject-Website">Website Security</label>
-                    <label className="results results-Website">Website Results</label>
-                </div>
-
-
-
             </form>
             {/* <footer>
             <FooterPage/>
             </footer> */}
         </div>
     );
-
 }
-export default Results; 
+export default Results;
+

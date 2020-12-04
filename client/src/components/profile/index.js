@@ -26,6 +26,13 @@ function Profile() {
             let path = "/results";
             history.push(path);
         }
+        if (formObject.firstName === "Jim"){
+            score += 20;
+            positives.push("Your name is jim!")
+        }
+        else {
+            negatives.push("your name is not Jim.")
+        }
     }
 
     return (

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
-import './login.css';
-import Dropdown from "../Dropdown/dropdown"
+import './signup.css';
+// import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
 // import FooterPage from "../footer";
 
@@ -11,7 +11,7 @@ let positives = [];
 let negatives = [];
 let score = 0;
 
-function Login() {
+function Signup() {
 
 
     const history = useHistory();
@@ -34,23 +34,21 @@ function Login() {
                 email: formObject.email,
                 password: formObject.password
             })
+            //Defining variables for the UserScore model
+
             // Changing these variables based off of our grading criteria 
             if (formObject.password.length >= 11) {
                 score += 20;
-                positives.push(`Your password length was ${formObject.password.length} characters, passwords should have at least 11 character.`)
+                positives.push("Your password is 11 or more characters long!")
             }
             else {
-                negatives.push(`Your password length was ${formObject.password.length} characters, passwords should have at least 11 character.`)
+                negatives.push("Your password is less than 11 characters long")
             };
-            var expressions = /^[a-zA-Z0-9!@#$%^&*]$/;
-            // Create an if statement that checks for numbers and characters
-            if (!expressions.test(formObject.password)) {
-                score += 20;
-                positives.push("You have added special characters to your password.")
-            }
-            else {
-                negatives.push("You should add special characters and numbers to your passwords.")
-            }
+            // Create an if statement that checks for numbers
+            // Create an if statement that checks for special characters
+
+            // Sends the data and creates the UserScore model
+            // Defines the next route for our routing
             let path = "/profile";
             // Pushes the path to the URL and directs us to that page
             history.push(path);
@@ -60,11 +58,11 @@ function Login() {
 
     return (
         <div className="container my-container">
-            <Dropdown />
+            {/* <Dropdown /> */}
             <form className="formLogin">
-                <h3>Sign in</h3>
+                <h3>Login</h3>
 
-                {/* <div className="form-group">
+                <div className="form-group">
                     <input type="text" className="form-control" placeholder="First name"
                         onChange={handleInputChange}
                         name="firstName" />
@@ -76,7 +74,7 @@ function Login() {
                         onChange={handleInputChange}
                         name="lastName" /> <b></b>
                     <div className="form-label"><label className="form-text">Last name</label></div>
-                </div> */}
+                </div>
 
                 <div className="form-group">
                     <input type="email" className="form-control" placeholder="Enter email"
@@ -93,9 +91,8 @@ function Login() {
                 </div>
 
                 <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
-                    Signin
+                    login
                 </button>
-
             </form>
             {/* <footer>
                 <FooterPage />
@@ -104,7 +101,7 @@ function Login() {
     );
 }
 
-export default Login;
+export default Signup;
 // Exports these variables, saves us time of doing multiple derivative CRUD actions 
 export { score };
 export { positives };

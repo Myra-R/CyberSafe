@@ -8,10 +8,10 @@ form{
   background-color: rgb(91, 168, 199);
   width: 550px;
   height: 74vh;
-  /* overflow: auto; */
+  overflow: auto;
   text-align: center;
-  position: relative;
- } 
+  /* position: relative; */
+}
 
 .form-text{
   color: rgb(40, 40, 99);

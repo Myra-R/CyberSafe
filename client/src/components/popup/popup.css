@@ -1,0 +1,17 @@
+.App {
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    pointer-events: auto;
+    color: red;
+}
+
+p {
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+}

@@ -33,6 +33,26 @@ padding:10px
   padding: 10px;
 }
 
-#loginBtn{
+#loginBtn {
   margin-bottom: .5em;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgb(43, 61, 121);
+}
+
+#loginBtn:hover {
+  background-color: rgba(36, 56, 121, 0.685);
+  color: white;
+  padding: 7px 30px;
+}
+
+.create-link {
+  color: white;
+  font-weight: 500;
+}
+
+.create-link:hover {
+  color: white;
+  text-decoration: none;
+
 }

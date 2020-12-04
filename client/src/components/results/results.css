@@ -1,22 +1,40 @@
+h1 {
+    font-family: 'Share Tech', sans-serif;
+}
+
+#results {
+    font-family: 'Share Tech', sans-serif;
+}
+
 .subject {
     font-size: larger;
     font-weight: bold;
     display: flex;
+    color:white
 }
 .results {
     display: flex;
+    color:black
 }
 
 .form{
     height: 84vh;
     overflow: auto;
 }
-.ul {
-    padding: 0;
-    margin: 0;
+
+.safe {
+    background-color: rgb(92, 194, 92);
 }
 
-.li {
-    padding: 0;
-    margin: 0;
+.adequate {
+    background-color: rgb(209, 209, 9);
+}
+
+.at-risk {
+    background-color: rgb(112, 5, 5);
+}
+
+.result-text {
+    color: black;
+    font-family: 'Share Tech', sans-serif;
 }

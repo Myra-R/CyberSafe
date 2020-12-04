@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 import './signup.css';
 // import Dropdown from "../Dropdown/dropdown"
@@ -60,7 +61,7 @@ function Signup() {
         <div className="container my-container">
             {/* <Dropdown /> */}
             <form className="formLogin">
-                <h3>Login</h3>
+                <h3>Create Account</h3>
 
                 <div className="form-group">
                     <input type="text" className="form-control" placeholder="First name"
@@ -90,8 +91,8 @@ function Signup() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
-                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
-                    login
+                <button onClick={handleFormSubmit} className="btn btn-dark" id="loginBtn">
+                    <Link to="/profile" className="create-link">Create Account</Link>
                 </button>
             </form>
             {/* <footer>

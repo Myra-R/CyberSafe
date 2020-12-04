@@ -5,17 +5,17 @@ form{
   max-width: 30%;
   text-align: center;
   box-shadow: 5px 6px 23px white;
-  background-color: rgb(91, 168, 199);
+  background: linear-gradient(to bottom, white, #12c2e9,  #01181f);
   width: 550px;
-  height: 74vh;
+  height: 68vh;
   /* overflow: auto; */
   text-align: center;
   position: relative;
  } 
 
 .form-text{
-  color: rgb(40, 40, 99);
-  font-weight: 50px ;
+  color: rgb(0, 0, 0);
+  font-weight: 500 ;
   padding-top:6px;
 }
 
@@ -36,3 +36,39 @@ padding:10px
 #loginBtn{
   margin-bottom: .5em;
 }
+
+.link {
+  color: #FFF;
+  font-weight: 500;
+  text-decoration: none
+}
+
+.link:hover {
+  color: #FFF;
+  font-weight: 500;
+  text-decoration: none
+}
+
+#loginBtn {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgb(101, 192, 214);
+}
+
+#loginBtn:hover {
+  background-color: rgba(232, 232, 233, 0.918);
+  color: white;
+  padding: 7px 30px;
+  text-decoration: none
+}
+
+.signup {
+  color: black;
+}
+
+.signup:hover {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 18px ;
+}
+

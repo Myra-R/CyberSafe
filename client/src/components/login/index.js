@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import {Link} from "react-router-dom"
 
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
+import Profile from "../profile";
 // import FooterPage from "../footer";
 
 // Sets the variables on a global scope, that can be exported to the following pages
@@ -92,9 +94,13 @@ function Login() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
-                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
-                    Signin
+                <button onClick={handleFormSubmit} className="btn btn-dark" id="loginBtn">
+                    <Link to="/profile" className="link">Sign in</Link>
                 </button>
+
+                <div>
+                    <Link to="/signup" className="signup link signup-link">Creat Account</Link>
+                </div>
 
             </form>
             {/* <footer>

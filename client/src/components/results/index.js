@@ -4,6 +4,7 @@ import './results.css';
 import Gauge from "../gauge/gauge"
 
 import { score, positives, negatives } from "../login/index";
+import $ from "jquery";
 
 function Results() {
 
@@ -12,13 +13,39 @@ function Results() {
     const negItems = negatives.map((neg) =>
         <li>{neg}</li>);
 
+    //text results
+    let text = ""
+    
+//color coding results
+    let results = ""
+    if (score < 100) { 
+    results=  "at-risk" 
+    text= "Your cyber security habits put you AT RISK.  Please consult the tips below to see where you need improvement."
+    }          
+
+    
+    else if (score < 200) {
+       results = "adequate";
+       text= "Your cyber security habits are ADEQUATE.  Please consult the tips below to see where you need improvement."
+    }
+    else {
+        results = "safe";
+        text= "You have displayed GOOD cyber security habits.  Please consult the tips below to see where you need improvement."
+    };
+
+
+    // scoreColor.text({score});
+    // $(".test-results").append(scoreColor);
+
+
     return (
         <div>
             <form className="form">
                 <h1>Results</h1>
                 <br />
                 <Gauge />
-                <h2 class="test-results">You Scored {score}</h2>
+                <h2 class= {results} id= "results">You Scored {score}</h2>
+                <p class= "result-text">{text}</p>
 
                 <div className="form-group password-test">
                     <label className="subject subject-password">Positives</label>

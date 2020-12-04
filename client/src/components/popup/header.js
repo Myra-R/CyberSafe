@@ -6,7 +6,7 @@ const defaultButtonStyles = {
   right:'15px',
   color: '#ffffff',
   background: 'none',
-  border: '#900C3F',
+  border: 0,
   fontWeight: 'bold',
   lineHeight: '40px',
   height: '40px'
@@ -31,11 +31,10 @@ const Header = ({headerText, headerBtnText, handleClose, headerStyles, headerBtn
   </div>
 )
 
-// Header.defaultProps = {
-//   headerText: 'Have Feedback? 📝',
-//   headerBtnText: 'X',
-//   headerBtnStyles: defaultButtonStyles,
-//   headerStyles: defaultHeaderStyles
-// }
+Header.defaultProps = {
+  headerBtnText: 'X',
+  headerBtnStyles: defaultButtonStyles,
+  headerStyles: defaultHeaderStyles
+}
 
 export default Header;

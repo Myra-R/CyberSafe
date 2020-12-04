@@ -1,3 +1,11 @@
+h1 {
+    font-family: 'Share Tech', sans-serif;
+}
+
+#results {
+    font-family: 'Share Tech', sans-serif;
+}
+
 .subject {
     font-size: larger;
     font-weight: bold;
@@ -24,4 +32,9 @@
 
 .at-risk {
     background-color: rgb(112, 5, 5);
+}
+
+.result-text {
+    color: black;
+    font-family: 'Share Tech', sans-serif;
 }

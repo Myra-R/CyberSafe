@@ -15,7 +15,7 @@ form{
 
 .form-text{
   color: rgb(40, 40, 99);
-  font-weight: 50px ;
+  font-weight: 500 ;
   padding-top:6px;
 }
 
@@ -35,4 +35,39 @@ padding:10px
 
 #loginBtn{
   margin-bottom: .5em;
+}
+
+.link {
+  color: #FFF;
+  font-weight: 500;
+  text-decoration: none
+}
+
+.link:hover {
+  color: #FFF;
+  font-weight: 500;
+  text-decoration: none
+}
+
+#loginBtn {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgb(43, 61, 121);
+}
+
+#loginBtn:hover {
+  background-color: rgba(36, 56, 121, 0.918);
+  color: white;
+  padding: 7px 30px;
+  text-decoration: none
+}
+
+.signup {
+  color: rgb(40, 40, 99);
+}
+
+.signup:hover {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 18px ;
 }

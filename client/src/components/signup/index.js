@@ -91,8 +91,8 @@ function Signup() {
                     <div className="form-label"><label className="form-text">Password</label></div>
                 </div>
 
-                <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
-                    <Link to="/profile">Create Account</Link>
+                <button onClick={handleFormSubmit} className="btn btn-dark" id="loginBtn">
+                    <Link to="/profile" className="create-link">Create Account</Link>
                 </button>
             </form>
             {/* <footer>

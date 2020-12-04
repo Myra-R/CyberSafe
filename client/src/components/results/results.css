@@ -11,3 +11,12 @@
     height: 84vh;
     overflow: auto;
 }
+.ul {
+    padding: 0;
+    margin: 0;
+}
+
+.li {
+    padding: 0;
+    margin: 0;
+}

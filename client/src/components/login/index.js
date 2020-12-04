@@ -6,8 +6,14 @@ import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
 import FooterPage from "../footer";
 
+// Sets the variables on a global scope, that can be exported to the following pages
+let positives = [];
+let negatives = [];
+let score = 0;
 
 function Login() {
+
+
     const history = useHistory();
     const [formObject, setFormObject] = useState({})
 
@@ -29,9 +35,7 @@ function Login() {
                 password: formObject.password
             })
             //Defining variables for the UserScore model
-            let positives = [];
-            let negatives = [];
-            let score = 0;
+
             // Changing these variables based off of our grading criteria 
             if (formObject.password.length >= 11) {
                 score += 20;
@@ -44,12 +48,6 @@ function Login() {
             // Create an if statement that checks for special characters
 
             // Sends the data and creates the UserScore model
-            // Note: We might want to add a foreign key here so that the user and userScore documents have a shared ID 
-            API.saveUserScore({
-                score: score,
-                negatives: negatives,
-                positives: positives
-            });
             // Defines the next route for our routing
             let path = "/profile";
             // Pushes the path to the URL and directs us to that page
@@ -96,11 +94,15 @@ function Login() {
                     login
                 </button>
             </form>
-            <footer>
-            <FooterPage/>
-            </footer>
+            {/* <footer>
+                <FooterPage />
+            </footer> */}
         </div>
     );
 }
 
-export default Login; 
+export default Login;
+// Exports these variables, saves us time of doing multiple derivative CRUD actions 
+export { score };
+export { positives };
+export { negatives }

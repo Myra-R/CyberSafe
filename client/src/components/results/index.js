@@ -5,7 +5,7 @@ import $ from "jquery";
 
 
 // import { score, positives, negatives } from "../login/index";
-var score = 50;
+var score = 201;
 var positives = ["y", "e", "s"];
 var negatives = ["n", "o"];
 
@@ -14,19 +14,25 @@ function Results() {
     <li>{pos}</li>);
     const negItems = negatives.map((neg) =>
     <li>{neg}</li>);
+
+    //text results
+    let text = ""
     
 //color coding results
     let results = ""
     if (score < 100) { 
-    results=  "at-risk"  
+    results=  "at-risk" 
+    text= "Your cyber security habits put you AT RISK.  Please consult the tips below to see where you need improvement."
     }          
 
     
     else if (score < 200) {
        results = "adequate";
+       text= "Your cyber security habits are ADEQUATE.  Please consult the tips below to see where you need improvement."
     }
     else {
         results = "safe";
+        text= "You have displayed GOOD cyber security habits.  Please consult the tips below to see where you need improvement."
     };
 
 
@@ -40,6 +46,7 @@ function Results() {
                 <h1>Results</h1>
                 <br />
                 <h2 class= {results} id= "results">You Scored {score}</h2>
+                <p class= "result-text">{text}</p>
 
 
                 <div className="form-group password-test">

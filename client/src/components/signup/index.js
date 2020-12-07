@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import './signup.css';
 // import Dropdown from "../Dropdown/dropdown"
 import API from "../../utils/API"
+import { post } from "jquery";
 // import FooterPage from "../footer";
 
 // Sets the variables on a global scope, that can be exported to the following pages
@@ -25,6 +26,67 @@ function Signup() {
         setFormObject({ ...formObject, [name]: value })
     };
 
+    function gradeCriteria() {
+        if (formObject.password.length >= 11) {
+            score += 10;
+            positives.push("Your password is 11 or more characters long!")
+        }
+        else {
+            negatives.push("Your password is less than 11 characters long")
+        };
+        var expressions = /^[a-zA-Z0-9!@#$%^&*]$/;
+        // Create an if statement that checks for numbers and characters
+        if (!expressions.test(formObject.password)) {
+            score += 10;
+            positives.push("You have added special characters to your password.")
+        }
+        else {
+            negatives.push("You should add special characters and numbers to your passwords.")
+        };
+        if(!formObject.phoneNumber) {
+            positives.push("You did not give out your personal phone number.");
+            score += 10;
+        }
+        else {
+            negatives.push("You should be careful giving out your personal phone number.")
+        };
+        if(!formObject.dateOfBirth) {
+            positives.push("You did not give out your date of birth.")
+            score += 10;
+        }
+        else {
+            negatives.push("You should be careful giving out personal info such as a date of birth.")
+        };
+        if(!formObject.genderFemale || !formObject.genderMale || !formObject.genderNA) {
+            positives.push("You did not give out personal info such as your gender.")
+            score += 10;
+        }
+        else {
+            negatives.push("You should be careful giving out personal info such as your gender.")
+        };
+        if(!formObject.socialNumber) {
+            positives.push("You did not give out your social security number.")
+            score += 30
+        }
+        else {
+            negatives.push("Never give out your social security number unless you absolutely need to.")
+        };
+        if(!formObject.homeAddress) {
+            positives.push("You did not give out personal information such as your home address.")
+            score += 10;
+        }
+        else {
+            negatives.push("You should be careful giving out personal info such as your gender.")
+        };
+        if(formObject.creditCardYes) {
+            negatives.push("Be careful when linking credit cards to certain sites.")
+        }
+        if(formObject.creditCardNo) {
+            positives.push("You did not give out your credit card information.")
+            score += 10;
+        }
+    }
+
     function handleFormSubmit(event) {
         event.preventDefault();
         // Pulls information from the form on the front end
@@ -34,41 +96,16 @@ function Signup() {
                 firstName: formObject.firstName,
                 lastName: formObject.lastName,
                 email: formObject.email,
-                password: formObject.password,
-                companyName: formObject.companyName,
-                position: formObject.position,
-                startDate: formObject.startDate,
-                phoneNumber: formObject.phoneNumber,
-                dateOfBirth: formObject.dateOfBirth,
-                genderFemale: formObject.genderFemale,
-                genderMale: formObject.genderMale,
-                genderNA: formObject.genderNA,
-                socialNumber: formObject.socialNumber,
-                homeAddress: formObject.homeAddress,
-                creditCardYes: formObject.creditCardYes,
-                creditCardNo: formObject.creditCardNo
+                password: formObject.password
             })
-            //Defining variables for the UserScore model
-
             // Changing these variables based off of our grading criteria 
-            if (formObject.password.length >= 11) {
-                score += 20;
-                positives.push("Your password is 11 or more characters long!")
-            }
-            else {
-                negatives.push("Your password is less than 11 characters long")
-            };
-            // Create an if statement that checks for numbers
-            // Create an if statement that checks for special characters
-
-            // Sends the data and creates the UserScore model
+            gradeCriteria();
             // Defines the next route for our routing
-            let path = "/profile";
+            let path = "/results";
             // Pushes the path to the URL and directs us to that page
             history.push(path);
         }
     }
-
 
     return (
         <div className="container my-container">

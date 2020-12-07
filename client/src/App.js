@@ -7,9 +7,9 @@ import Results from './components/results'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import FooterPage from './components/footer'
 import ourError from "./components/Error/sorry"
-function App() {
 
-  
+
+function App() {
   return (
     <Router>
       <Switch>

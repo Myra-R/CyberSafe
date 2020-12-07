@@ -5,14 +5,14 @@ import './results.css';
 import GaugeChart from 'react-gauge-chart';
 
 
-// import { score, positives, negatives } from "../login/index";
+import { score, positives, negatives } from "../signup/index";
 // import $ from "jquery";
 
 // For test purposes only 
-let score = 1000;
-let positives = ["you done good", "kid"];
-let negatives = ["try again", "but be better", "this time"];
-let scorePercentage = score/1000
+// let score = 1000;
+// let positives = ["you done good", "kid"];
+// let negatives = ["try again", "but be better", "this time"];
+let scorePercentage = score/100
 
 function Results() {
 
@@ -57,7 +57,7 @@ function Results() {
                         percent={scorePercentage}
                     />
                 </div>
-                <h2 class={results} id="results">You Scored {score}</h2>
+                <h2 class={results} id="results">You Scored {score}/100</h2>
                 <p class="result-text">{text}</p>
 
                 <div className="form-group password-test">

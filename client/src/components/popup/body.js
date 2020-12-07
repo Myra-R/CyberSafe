@@ -3,6 +3,7 @@ import StarRatings from 'react-star-ratings';
 import './popup.css';
 import Warning from './viruswarning3.jpg';
 
+
 const defaultBodyStyles = {
 	padding: '10px',
 	fontSize: '14px',

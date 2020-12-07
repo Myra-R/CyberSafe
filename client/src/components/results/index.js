@@ -5,7 +5,7 @@ import $ from "jquery";
 
 
 // import { score, positives, negatives } from "../login/index";
-var score = 201;
+var score = 50;
 var positives = ["y", "e", "s"];
 var negatives = ["n", "o"];
 

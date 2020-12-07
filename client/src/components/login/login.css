@@ -71,3 +71,7 @@ padding:10px
   font-weight: 500;
   font-size: 18px ;
 }
+.logo {
+  max-width: 100%;
+  height: auto;
+}

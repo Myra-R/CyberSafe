@@ -20,7 +20,6 @@ function App() {
         <Route component={ourError} />
         </Switch>
     <FooterPage></FooterPage>
-    
     </Router>
   );
 }

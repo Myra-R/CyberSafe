@@ -54,5 +54,10 @@ padding:10px
 .create-link:hover {
   color: white;
   text-decoration: none;
+}
 
+.optional {
+  color: black;
+  font-size: 10px;
+  font-weight: normal;
 }

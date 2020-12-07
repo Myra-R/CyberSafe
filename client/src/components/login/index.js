@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import "../../logo/cybersafe-logo.png"
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
-import Logo from "../../logo/cybersafe-logo.png"
+import Logo from "../../logo/cybersafe-logo3.png"
 import API from "../../utils/API"
 import Profile from "../profile";
 // import FooterPage from "../footer";

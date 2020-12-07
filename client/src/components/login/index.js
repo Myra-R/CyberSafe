@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import "../../logo/cybersafe-logo.png"
 import './login.css';
 import Dropdown from "../Dropdown/dropdown"
-import Logo from "../../logo/cybersafe-logo3.png"
+import Logo from "../../logo/cybersafe-logo2.png"
 import API from "../../utils/API"
 import Profile from "../profile";
 // import FooterPage from "../footer";
@@ -65,7 +65,7 @@ function Login() {
         <div className="container my-container">
             <Dropdown />
             <figure className="logo col-md-8">
-                <img src= {Logo} className="img-thumbnail" alt="logo" />
+                <img src= {Logo} className="logo img-fluid" alt="logo" />
             </figure>
             <form className="formLogin">
                 <h3>Sign in</h3>

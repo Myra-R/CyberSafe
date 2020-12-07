@@ -12,6 +12,10 @@ function Profile() {
     const history = useHistory();
     const [formObject, setFormObject] = useState({})
 
+    function handleInputChange(event) {
+        const { name, value } = event.target;
+        setFormObject({ ...formObject, [name]: value })
+    };
 
     function handleFormSubmit(event) {
         event.preventDefault();
@@ -43,8 +47,10 @@ function Profile() {
                 <h3>Profile Section</h3>
 
                 <div id="form-firstName">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                <div className="form-label"><label className="form-text">First Name</label></div>
+                    <input type="text" className="form-control" placeholder="First name"
+                    onChange={handleInputChange}
+                    name="first name" /> <br></br>
                 </div>
 
                 <div id="form-lastName">

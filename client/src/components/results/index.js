@@ -1,38 +1,42 @@
 import React from "react";
 import FooterPage from "../footer";
 import './results.css';
-import $ from "jquery";
+// import Gauge from "../gauge/gauge"
+import GaugeChart from 'react-gauge-chart';
 
 
 // import { score, positives, negatives } from "../login/index";
-var score = 50;
-var positives = ["y", "e", "s"];
-var negatives = ["n", "o"];
+// import $ from "jquery";
+
+// For test purposes only 
+let score = 1000;
+let positives = ["you done good", "kid"];
+let negatives = ["try again", "but be better", "this time"];
+let scorePercentage = score/1000
 
 function Results() {
+
     const posItems = positives.map((pos) =>
-    <li>{pos}</li>);
+        <li>{pos}</li>);
     const negItems = negatives.map((neg) =>
-    <li>{neg}</li>);
+        <li>{neg}</li>);
 
     //text results
     let text = ""
-    
-//color coding results
-    let results = ""
-    if (score < 100) { 
-    results=  "at-risk" 
-    text= "Your cyber security habits put you AT RISK.  Please consult the tips below to see where you need improvement."
-    }          
 
-    
+    //color coding results
+    let results = ""
+    if (score < 100) {
+        results = "at-risk"
+        text = "Your cyber security habits put you AT RISK.  Please consult the tips below to see where you need improvement."
+    }
     else if (score < 200) {
-       results = "adequate";
-       text= "Your cyber security habits are ADEQUATE.  Please consult the tips below to see where you need improvement."
+        results = "adequate";
+        text = "Your cyber security habits are ADEQUATE.  Please consult the tips below to see where you need improvement."
     }
     else {
         results = "safe";
-        text= "You have displayed GOOD cyber security habits.  Please consult the tips below to see where you need improvement."
+        text = "You have displayed GOOD cyber security habits.  Please consult the tips below to see where you need improvement."
     };
 
 
@@ -45,9 +49,16 @@ function Results() {
             <form className="form">
                 <h1>Results</h1>
                 <br />
-                <h2 class= {results} id= "results">You Scored {score}</h2>
-                <p class= "result-text">{text}</p>
-
+                <div>
+                    <GaugeChart id="gauge-chart3"
+                        nrOfLevels={30}
+                        colors={["#FF5F6D", "#00FF00"]}
+                        arcWidth={0.3}
+                        percent={scorePercentage}
+                    />
+                </div>
+                <h2 class={results} id="results">You Scored {score}</h2>
+                <p class="result-text">{text}</p>
 
                 <div className="form-group password-test">
                     <label className="subject subject-password">Positives</label>
@@ -63,5 +74,5 @@ function Results() {
         </div>
     );
 }
-export default Results;
 
+export default Results;

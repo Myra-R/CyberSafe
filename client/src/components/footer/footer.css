@@ -12,7 +12,7 @@
     max-width: 38%;
     text-align: center;
     box-shadow: 5px 6px 23px white;
-    background-color: rgb(91, 168, 199);
+    background: linear-gradient(to bottom, white, #12c2e9,  #01181f);
     height: auto;
     text-align: center;
     position: relative;

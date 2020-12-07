@@ -5,6 +5,7 @@
     position: relative;
     box-shadow: 5px 6px 13px white;
     background: linear-gradient(to bottom, white, #12c2e9,  #01181f);
+    
 }
 
 #form-firstName{
@@ -13,14 +14,14 @@
     height: 100px;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
-    animation-delay: 1.3s;
+    animation-duration: 3.5s;
+    animation-delay: .1s;
     animation-fill-mode: forwards;
     z-index: 3;
 }
 
 @keyframes example{
-    from {top: -500px; opacity: 50%}
+    from {top: -500px; opacity: 0%; display: none}
     to {top: 20px; backround-color: white;}
     to {transform: translateY(0); background-color: rgb(223, 238, 241); opacity: 80%; box-shadow: 5px 9px 13px rgb(78, 176, 233); padding-top: 10px; padding-bottom: 10px;}
 }
@@ -31,8 +32,8 @@
     height: 100px;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: .1s;
     animation-fill-mode: forwards;
     z-index: 2;
 }
@@ -43,8 +44,8 @@
     height: 100px;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
-    animation-delay: .7s;
+    animation-duration: 2.5s;
+    animation-delay: .1s;
     animation-fill-mode: forwards;
     z-index: 1;
 
@@ -57,7 +58,7 @@
     position: relative;
     animation-name: example;
     animation-duration: 2s;
-    animation-delay: .3s;
+    animation-delay: .1s;
     animation-fill-mode: forwards;
     z-index: 1;
    
@@ -70,7 +71,7 @@
     height: 100px;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-delay: .1s;
     animation-fill-mode: forwards;
     z-index: 1;

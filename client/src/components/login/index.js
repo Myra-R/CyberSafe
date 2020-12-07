@@ -64,8 +64,8 @@ function Login() {
     return (
         <div className="container my-container">
             <Dropdown />
-            <figure className="logo col-md-8">
-                <img src= {Logo} className="logo img-fluid" alt="logo" />
+            <figure className="logo col-md-6">
+                <img src= {Logo} className="logo img-fluid" id="logoimg" alt="logo" />
             </figure>
             <form className="formLogin">
                 <h3>Sign in</h3>

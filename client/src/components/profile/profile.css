@@ -21,7 +21,7 @@
 }
 
 @keyframes example{
-    from {top: -500px; opacity: 0%; display: none}
+    from {top: -500px;}
     to {top: 20px; backround-color: white;}
     to {transform: translateY(0); background-color: rgb(223, 238, 241); opacity: 80%; box-shadow: 5px 9px 13px rgb(78, 176, 233); padding-top: 10px; padding-bottom: 10px;}
 }

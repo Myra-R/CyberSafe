@@ -75,9 +75,7 @@ function Profile() {
                 <button onClick={handleFormSubmit} className="btn btn-dark mt-3 mb-2" id="loginBtn">
                     Submit
                 </button>
-                {/* <footer>
-            <FooterPage/>
-            </footer> */}
+              
             </form>
 
         </div>

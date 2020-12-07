@@ -18,9 +18,9 @@ function App() {
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/results" component={Results} />
         <Route component={ourError} />
-    
+        </Switch>
     <FooterPage></FooterPage>
-    </Switch>
+    
     </Router>
   );
 }

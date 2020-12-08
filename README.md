@@ -17,11 +17,18 @@ This app runs using React.  An NPM install should be run to download all of the 
   [WRugby1](https://github.com/WRugby1), [ikethe4](https://github.com/ikethe4), [Myra-R](https://github.com/Myra-R), [GrimmeDev](https://github.com/GrimmeDev), [wkgrant78], (https://github.io/wkgrant78)
 
   ## Walkthrough
-  [Walkthrough](walkthrough goes here)
+  [Walkthrough](https://drive.google.com/file/d/1-XLUXmbp08P6HIrIvyluGvnfilod81O3/view)
 
   ## Instructions for Use
   When used properly, this app allows employers to test their incoming employees' cybersecurity knowledge.  The user should be directed to the main page with no further instruction other than they should set up an account to be tested on matters of cybersecurity.  The user flow the user chooses will determine their score.
 
+  ## Deployed Link
+  [CyberSafe](https://cybersafe1.herokuapp.com/)
+
   ## Screenshots
-  ![placeholder](placeholder)
+![Login Page](./client/public/screenshot2.png)
+![Sign Up Page](./client/public/screenshot3.png)
+![Results Page](./client/public/screenshot1.png)
+  
+
 

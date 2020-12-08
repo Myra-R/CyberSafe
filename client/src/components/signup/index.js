@@ -47,6 +47,9 @@ function Signup() {
     }
 
     function gradeCriteria() {
+        // Compares password to top 100 common passwords
+        getpasswords();
+        comparePasswords();
         // Checks password length
         if (formObject.password.length >= 11) {
             score += 10;
@@ -63,9 +66,6 @@ function Signup() {
         else {
             negatives.push("You should add special characters and numbers to your passwords.")
         };
-        // Compares password to top 100 common passwords
-        getpasswords();
-        comparePasswords();
         // 47-88 Check to see if they have given up personal information
         if (!formObject.phoneNumber) {
             positives.push("You did not give out your personal phone number.");

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom"
+import Popup from '../popup'
 
 import './signup.css';
 // import Dropdown from "../Dropdown/dropdown"
@@ -130,6 +131,10 @@ function Signup() {
     }
 
     return (
+
+        <div>
+        {<Popup />}
+
         <div className="container my-container">
             {/* <Dropdown /> */}
             <form className="formLogin">
@@ -246,11 +251,13 @@ function Signup() {
                 </div>
 
                 <button onClick={handleFormSubmit} className="btn btn-dark" id="loginBtn">
-                    <Link className="create-link">Create Account</Link>
+                    <Link className="./results">Create Account</Link>
                 </button>
             </form>
         </div>
+        </div>
     );
+    
 }
 
 export default Signup;

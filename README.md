@@ -11,7 +11,7 @@ Poor cyber security habits can have very real financial costs to companies.  One
   * [Screenshots](#screenshots)
   
   ## Installation
-This app runs using React.  An NPM install should be run to download all of the listed dependencies.
+This app runs using React.  An NPM install should be run to download all of the listed dependencies.  NPM run seed should also be run.
 
   ## Contributors
   [WRugby1](https://github.com/WRugby1), [ikethe4](https://github.com/ikethe4), [Myra-R](https://github.com/Myra-R), [GrimmeDev](https://github.com/GrimmeDev), [wkgrant78], (https://github.io/wkgrant78)

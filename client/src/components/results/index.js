@@ -12,9 +12,10 @@ import { score, positives, negatives } from "../signup/index";
 // let score = 1000;
 // let positives = ["you done good", "kid"];
 // let negatives = ["try again", "but be better", "this time"];
-let scorePercentage = score/100
+
 
 function Results() {
+    let scorePercentage = score/100
 
     const posItems = positives.map((pos) =>
         <li>{pos}</li>);

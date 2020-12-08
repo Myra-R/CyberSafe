@@ -22,5 +22,8 @@ export default {
   },
   updateUserScore: function (id) {
     return axios.put("/api/userScore/" + id)
+  },
+  getPasswords: function () {
+    return axios.get("/api/passwords")
   }
 };

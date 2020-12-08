@@ -137,111 +137,112 @@ function Signup() {
                 <p className="optional">(* Optional Questions)</p>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">First name</label></div>
-                    <input type="text" className="form-control" placeholder="First name"
+                    <div className="form-label"><label id="form-firstName">First name</label></div>
+                    <input type="text" id="form-firstName" placeholder="First name"
                         onChange={handleInputChange}
                         name="firstName" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">Last name</label></div>
-                    <input type="text" className="form-control" placeholder="Last name"
+                    <div className="form-label"><label id="form-lastName">Last name</label></div>
+                    <input type="text" id="form-lastName" placeholder="Last name"
                         onChange={handleInputChange}
                         name="lastName" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">Email</label></div>
-                    <input type="email" className="form-control" placeholder="Enter email"
+                    <div className="form-label"><label id="form-email">Email</label></div>
+                    <input type="email" id="form-email" placeholder="Enter email"
                         onChange={handleInputChange}
                         name="email" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">Create Password</label></div>
-                    <input type="password" className="form-control" placeholder="Enter password"
+                    <div className="form-label"><label id="form-password">Create Password</label></div>
+                    <input type="password" id="form-password" placeholder="Enter password"
                         onChange={handleInputChange}
                         name="password" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What company are you applying with?</label></div>
-                    <input type="text" className="form-control" placeholder="Company Name"
+                    <div className="form-label"><label id="form-company">What company are you applying with?</label></div>
+                    <input type="text" id="form-company" placeholder="Company Name"
                         onChange={handleInputChange}
                         name="company" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What position are you applying for?</label></div>
-                    <input type="text" className="form-control" placeholder="Position"
+                    <div className="form-label"><label id="form-position">What position are you applying for?</label></div>
+                    <input type="text" id="form-position" placeholder="Position"
                         onChange={handleInputChange}
                         name="position" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What is your anticipated start date?</label></div>
-                    <input type="string" className="form-control" placeholder="MM/DD/YYYY"
+                    <div className="form-label"><label id="form-date">What is your anticipated start date?</label></div>
+                    <input type="string" id="form-date" placeholder="MM/DD/YYYY"
                         onChange={handleInputChange}
                         name="startDate" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What is your personal phone number?*</label></div>
-                    <input type="string" className="form-control" placeholder="555-555-5555"
+                    <div className="form-label"><label id="form-phone">What is your personal phone number?*</label></div>
+                    <input type="string" id="form-phone" placeholder="555-555-5555"
                         onChange={handleInputChange}
                         name="phoneNumber" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What is your date of birth?*</label></div>
-                    <input type="string" className="form-control" placeholder="MM/DD/YYYY"
+                    <div className="form-label"><label id="form-birth">What is your date of birth?*</label></div>
+                    <input type="string" id="form-birth" placeholder="MM/DD/YYYY"
                         onChange={handleInputChange}
                         name="dateOfBirth" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What is your gender?*</label></div>
+                    <div className="form-label"><label id="form-gender">What is your gender?*</label></div>
                     <div className="container">
-                        <input type="checkbox" value="female" className="form-control check-box" placeholder="Female"
+                        <input type="checkbox" value="female" className="form-control check-box"  id="form-gender" placeholder="Female"
                             onChange={handleInputChange}
                             name="genderFemale" />
-                        <div className="form-label"><label className="form-text">Female</label></div>
-                        <input type="checkbox" value="male" className="form-control check-box" placeholder="Male"
+                        <div className="form-label"><label id="form-gender">Female</label></div>
+                        <input type="checkbox" value="male" className="form-control check-box" id="form-gender" placeholder="Male"
                             onChange={handleInputChange}
                             name="genderMale" />
-                        <div className="form-label"><label className="form-text">Male</label></div>
-                        <input type="checkbox" value="na" className="form-control check-box" placeholder="Prefer not to disclose"
+                        <div className="form-label"><label id="form-gender">Male</label></div>
+                        <input type="checkbox" value="na" className="form-control check-box" id="form-gender" placeholder="Prefer not to disclose"
                             onChange={handleInputChange}
                             name="genderNA" />
-                        <div className="form-label"><label className="form-text">Prefer not to disclose</label></div>
+                            <br></br>
+                        <div className="form-label"><label id="form-gender1">Prefer not to disclose</label></div>
                     </div>
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What is your social security number?*</label></div>
-                    <input type="string" className="form-control" placeholder="Enter SNN (include hyphen)"
+                    <div className="form-label"><label id="form-social">What is your social security number?*</label></div>
+                    <input type="string" id="form-social" placeholder="Enter SNN (include hyphen)"
                         onChange={handleInputChange}
                         name="socialNumber" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">What is your home address?*</label></div>
-                    <input type="text" className="form-control" placeholder="Enter address, City, State, Zip Code"
+                    <div className="form-label"><label id="form-address">What is your home address?*</label></div>
+                    <input type="text" id="form-address" placeholder="Enter address, City, State, Zip Code"
                         onChange={handleInputChange}
                         name="homeAddress" />
                 </div>
 
                 <div className="form-group">
-                    <div className="form-label"><label className="form-text">Do you want to link a credit card for in app purchases?*</label></div>
+                    <div className="form-label"><label id="form-credit">Do you want to link a credit card for in app purchases?*</label></div>
                     <div className="container">
-                        <input type="checkbox" value="yes" className="form-control check-box" placeholder="Yes"
+                        <input type="checkbox" value="yes" className="form-control check-box" id="form-credit1"placeholder="Yes"
                             onChange={handleInputChange}
                             name="creditCardYes" />
-                        <div className="form-label"><label className="form-text">Yes</label></div>
-                        <input type="checkbox" value="no" className="form-control check-box" placeholder="No"
+                        <div className="form-label"><label id="form-credit1">Yes</label></div>
+                        <input type="checkbox" value="no" className="form-control check-box" id="form-credit1" placeholder="No"
                             onChange={handleInputChange}
                             name="creditCardNo" />
-                        <div className="form-label"><label className="form-text">No</label></div>
+                        <div className="form-label"><label id="form-credit1">No</label></div>
                     </div>
                 </div>
 

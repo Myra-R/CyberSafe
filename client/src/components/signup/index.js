@@ -132,11 +132,11 @@ function Signup() {
 
     return (
 
-        <div>
-        {<Popup />}
+
+
 
         <div className="container my-container">
-            {/* <Dropdown /> */}
+            <Popup />
             <form className="formLogin">
                 <h3>Create Account</h3>
                 <p className="optional">(* Optional Questions)</p>
@@ -256,7 +256,7 @@ function Signup() {
                 </button>
             </form>
         </div>
-        </div>
+        
     );
     
 }

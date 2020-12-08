@@ -5,14 +5,14 @@ import './results.css';
 import GaugeChart from 'react-gauge-chart';
 
 
-// import { score, positives, negatives } from "../login/index";
+import { score, positives, negatives } from "../signup/index";
 // import $ from "jquery";
 
 // For test purposes only 
-let score = 1000;
-let positives = ["you done good", "kid"];
-let negatives = ["try again", "but be better", "this time"];
-let scorePercentage = score/1000
+// let score = 1000;
+// let positives = ["you done good", "kid"];
+// let negatives = ["try again", "but be better", "this time"];
+let scorePercentage = score/100
 
 function Results() {
 
@@ -26,11 +26,11 @@ function Results() {
 
     //color coding results
     let results = ""
-    if (score < 100) {
+    if (score < 65) {
         results = "at-risk"
         text = "Your cyber security habits put you AT RISK.  Please consult the tips below to see where you need improvement."
     }
-    else if (score < 200) {
+    else if (score < 81) {
         results = "adequate";
         text = "Your cyber security habits are ADEQUATE.  Please consult the tips below to see where you need improvement."
     }
@@ -38,10 +38,6 @@ function Results() {
         results = "safe";
         text = "You have displayed GOOD cyber security habits.  Please consult the tips below to see where you need improvement."
     };
-
-
-    // scoreColor.text({score});
-    // $(".test-results").append(scoreColor);
 
 
     return (
@@ -57,7 +53,7 @@ function Results() {
                         percent={scorePercentage}
                     />
                 </div>
-                <h2 class={results} id="results">You Scored {score}</h2>
+                <h2 class={results} id="results">You Scored {score}/100</h2>
                 <p class="result-text">{text}</p>
 
                 <div className="form-group password-test">

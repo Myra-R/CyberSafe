@@ -54,7 +54,7 @@ function Login() {
             else {
                 negatives.push("You should add special characters and numbers to your passwords.")
             }
-            let path = "/profile";
+            let path = "/signup";
             // Pushes the path to the URL and directs us to that page
             history.push(path);
         }
@@ -99,7 +99,7 @@ function Login() {
                 </div>
 
                 <button onClick={handleFormSubmit} className="btn btn-dark" id="loginBtn">
-                    <Link to="/profile" className="link">Sign in</Link>
+                    <Link to="/signup" className="link">Sign in</Link>
                 </button>
 
                 <div>

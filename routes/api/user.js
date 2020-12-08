@@ -13,5 +13,3 @@ router
   .delete(usercontroller.remove);
 
 module.exports = router;
-
-// API routes need a lot of fine tuning, currently only match up with users, will need to fine tune once we decide on what routes we need and where

@@ -15,7 +15,6 @@ function App() {
       <Switch>
         <Route exact path="/" component={Login} />
         <Route exact path="/signup" component={Signup} />
-        <Route exact path="/profile" component={Profile} />
         <Route exact path="/results" component={Results} />
         <Route component={ourError} />
         </Switch>

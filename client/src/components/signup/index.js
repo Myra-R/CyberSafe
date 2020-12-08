@@ -59,7 +59,7 @@ function Signup() {
             negatives.push("Your password is less than 11 characters long")
         };
         // Checks for numbers and characters
-        if (expressions.test(formObject.password)) {
+        if (!expressions.test(formObject.password)) {
             score += 10;
             positives.push("You have added special characters to your password.")
         }
@@ -105,7 +105,7 @@ function Signup() {
         if (formObject.creditCardYes) {
             negatives.push("Be careful when linking credit cards to certain sites.")
         }
-        if (formObject.creditCardNo) {
+        if (formObject.creditCardNo || (!formObject.creditCardNo && !formObject.creditCardYes)) {
             positives.push("You did not give out your credit card information.")
             score += 10;
         };

@@ -4,6 +4,7 @@ import './results.css';
 // import Gauge from "../gauge/gauge"
 import GaugeChart from 'react-gauge-chart';
 
+
 import { score, positives, negatives } from "../signup/index";
 // import $ from "jquery";
 
@@ -11,12 +12,10 @@ import { score, positives, negatives } from "../signup/index";
 // let score = 1000;
 // let positives = ["you done good", "kid"];
 // let negatives = ["try again", "but be better", "this time"];
-
+let scorePercentage = score/100
 
 function Results() {
 
-    let scorePercentage = score/100
-    
     const posItems = positives.map((pos) =>
         <li>{pos}</li>);
     const negItems = negatives.map((neg) =>
@@ -27,11 +26,11 @@ function Results() {
 
     //color coding results
     let results = ""
-    if (score < 50) {
+    if (score < 65) {
         results = "at-risk"
         text = "Your cyber security habits put you AT RISK.  Please consult the tips below to see where you need improvement."
     }
-    else if (score < 100) {
+    else if (score < 81) {
         results = "adequate";
         text = "Your cyber security habits are ADEQUATE.  Please consult the tips below to see where you need improvement."
     }
@@ -39,10 +38,6 @@ function Results() {
         results = "safe";
         text = "You have displayed GOOD cyber security habits.  Please consult the tips below to see where you need improvement."
     };
-
-
-    // scoreColor.text({score});
-    // $(".test-results").append(scoreColor);
 
 
     return (
